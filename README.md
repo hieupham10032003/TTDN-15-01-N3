@@ -36,7 +36,7 @@ pip3 install -r requirements.txt
 
 Khởi tạo database trên docker bằng việc thực thi file dockercompose.yml.
 
-`docker-compose up -d`
+`sudo docker-compose up -d`
 
 # 3. Setup tham số chạy cho hệ thống
 
@@ -70,3 +70,4 @@ Người sử dụng truy cập theo đường dẫn _http://localhost:8069/_ đ
 
 Hoàn tất
     
+python3 odoo-bin.py -c odoo.conf -u all
