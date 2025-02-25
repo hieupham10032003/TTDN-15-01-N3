@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_tai_san_form" model="ir.ui.view">
+            <field name="name">tai_san</field>
+            <field name="model">tai_san</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_read_only" style="font-size:25px">Tài sản</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="ma_tai_san"/>
+                            <field name="ten_tai_san"/>
+                            <field name="loai_tai_san"/>
+                            <field name="gia_tri"/>
+                            <field name="ngay_mua"/>
+                            <field name="tinh_trang"/>
+                            <field name="vi_tri"/>
+                        </group>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tai_san_tree" model="ir.ui.view">
+            <field name="name">tai_san</field>
+            <field name="model">tai_san</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ma_tai_san"/>
+                            <field name="ten_tai_san"/>
+                            <field name="loai_tai_san"/>
+                            <field name="gia_tri"/>
+                            <field name="ngay_mua"/>
+                            <field name="tinh_trang"/>
+                            <field name="vi_tri"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="tai_san_search">
+            <field name="model">tai_san</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="ma_tai_san"/>
+                            <field name="ten_tai_san"/>
+                            <field name="loai_tai_san"/>
+                            <field name="gia_tri"/>
+                            <field name="ngay_mua"/>
+                            <field name="tinh_trang"/>
+                            <field name="vi_tri"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_tai_san" model="ir.actions.act_window">
+            <field name="name">Tài sản</field>
+            <field name="res_model">tai_san</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "tai_san_search"/>
+
+        </record>
+
+    </data>
+</odoo>
+        
+    
