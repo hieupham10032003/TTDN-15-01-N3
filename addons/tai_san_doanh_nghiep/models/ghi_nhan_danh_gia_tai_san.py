@@ -11,7 +11,7 @@ class GhiNhanDanhGiaTaiSan(models.Model):
     gia_tri_hien_tai = fields.Float("Giá trị hiện tại")
     khau_hao = fields.Float("Khấu hao")
     ghi_chu = fields.Text("Ghi chú")
-    nguoi_danh_gia = fields.Char("Người đánh giá", required=True)
+    nhan_vien_id = fields.Many2one("nhan_vien", string="Người đánh giá")
 
     @api.onchange('ma_tai_san')
     def _onchange_ma_tai_san(self):

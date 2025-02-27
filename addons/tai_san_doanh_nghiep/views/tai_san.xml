@@ -16,8 +16,28 @@
                             <field name="ngay_mua"/>
                             <field name="tinh_trang"/>
                             <field name="vi_tri"/>
+                            <field name="anh"/>
                         </group>
-                        
+                        <notebook>
+                            <page string="Đánh giá tài sản">
+                                <field name="ghi_nhan_danh_gia_tai_san"/>
+                            </page>
+                        </notebook>
+                        <notebook>
+                            <page string="Lịch sử phân bố">
+                                <field name="phan_bo_tai_san"/>
+                            </page>
+                        </notebook>
+                        <notebook>
+                            <page string="Bảo trì sửa chữa">
+                                <field name="bao_tri_sua_chua"/>
+                            </page>
+                        </notebook>
+                        <notebook>
+                            <page string="Quản lý rủi ro">
+                                <field name="quan_ly_rui_ro"/>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -35,6 +55,7 @@
                             <field name="ngay_mua"/>
                             <field name="tinh_trang"/>
                             <field name="vi_tri"/>
+                            <field name="anh"/>
                 </tree>
             </field>
         </record>
@@ -50,6 +71,7 @@
                             <field name="ngay_mua"/>
                             <field name="tinh_trang"/>
                             <field name="vi_tri"/>
+                            <field name="anh"/>
                 </search>
             </field>
         </record>

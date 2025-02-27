@@ -10,7 +10,7 @@ class BaoTriSuaChua(models.Model):
     ngay_bao_tri = fields.Date("Ngày bảo trì", required=True)
     mo_ta = fields.Text("Mô tả công việc bảo trì/sửa chữa", required=True)
     chi_phi = fields.Float("Chi phí bảo trì/sửa chữa")
-    nguoi_thuc_hien = fields.Char("Người thực hiện", required=True)
+    nhan_vien_id = fields.Many2one("nhan_vien", string="Người thực hiện")
     trang_thai = fields.Selection([
         ('hoan_tat', 'Hoàn tất'),
         ('dang_thuc_hien', 'Đang thực hiện'),

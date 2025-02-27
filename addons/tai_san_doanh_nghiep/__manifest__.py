@@ -30,6 +30,8 @@
         'views/bao_tri_sua_chua.xml',
         'views/phan_bo_tai_san.xml',
         'views/quan_ly_rui_ro.xml',
+        'views/muon_tra.xml',
+        'views/thong_ke_tai_san.xml',
         'views/menu.xml',
     ],
     # only loaded in demonstration mode

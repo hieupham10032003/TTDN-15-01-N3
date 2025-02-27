@@ -13,7 +13,7 @@
                             <field name="ngay_bao_tri"/>
                             <field name="mo_ta"/>
                             <field name="chi_phi"/>
-                            <field name="nguoi_thuc_hien"/>
+                            <field name="nhan_vien_id"/>
                             <field name="trang_thai"/>
                         </group>
                         
@@ -31,7 +31,7 @@
                             <field name="ngay_bao_tri"/>
                             <field name="mo_ta"/>
                             <field name="chi_phi"/>
-                            <field name="nguoi_thuc_hien"/>
+                            <field name="nhan_vien_id"/>
                             <field name="trang_thai"/>
                 </tree>
             </field>
@@ -45,7 +45,7 @@
                             <field name="ngay_bao_tri"/>
                             <field name="mo_ta"/>
                             <field name="chi_phi"/>
-                            <field name="nguoi_thuc_hien"/>
+                            <field name="nhan_vien_id"/>
                             <field name="trang_thai"/>
                 </search>
             </field>

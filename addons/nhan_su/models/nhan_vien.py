@@ -8,12 +8,13 @@ class NhanVien(models.Model):
     _rec_name = 'ho_va_ten'
     _order = 'ho_va_ten asc, tuoi desc' 
 
-    ma_dinh_danh = fields.Char("Mã định danh", required=True)
+    nhan_vien_id = fields.Char("Mã định danh", required=True)
     ho_va_ten = fields.Char("Họ và tên", required=True)
     ngay_sinh = fields.Date("Ngày sinh")
     que_quan = fields.Char("Quê quán")
     email = fields.Char("Email")
     so_dien_thoai = fields.Char("Số điện thoại")
+    nguoi_xac_nhan = fields.Char("Người xác nhận")
     lich_su_cong_tac = fields.One2many("lich_su_cong_tac", 
                                         inverse_name="nhan_vien_id", 
                                         string="Danh sách lịch sử công tác")
@@ -22,7 +23,7 @@ class NhanVien(models.Model):
                                         string="Danh sách bàng cấp")
     tuoi = fields.Integer("Tuổi", compute="_compute_tinh_tuoi", stoge=True)
     anh = fields.Binary("Ảnh")
-
+    
     @api.depends("ngay_sinh")
     def _compute_tinh_tuoi(self):
         today = datetime.today()

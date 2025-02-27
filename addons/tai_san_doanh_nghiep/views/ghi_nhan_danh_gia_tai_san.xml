@@ -14,7 +14,7 @@
                             <field name="gia_tri_hien_tai"/>
                             <field name="khau_hao"/>
                             <field name="ghi_chu"/>
-                            <field name="nguoi_danh_gia"/>
+                            <field name="nhan_vien_id"/>
                         </group>
                         
                     </sheet>
@@ -32,7 +32,7 @@
                             <field name="gia_tri_hien_tai"/>
                             <field name="khau_hao"/>
                             <field name="ghi_chu"/>
-                            <field name="nguoi_danh_gia"/>
+                            <field name="nhan_vien_id"/>
                 </tree>
             </field>
         </record>
@@ -46,7 +46,7 @@
                             <field name="gia_tri_hien_tai"/>
                             <field name="khau_hao"/>
                             <field name="ghi_chu"/>
-                            <field name="nguoi_danh_gia"/>
+                            <field name="nhan_vien_id"/>
                 </search>
             </field>
         </record>

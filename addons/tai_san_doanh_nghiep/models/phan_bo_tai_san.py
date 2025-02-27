@@ -9,7 +9,7 @@ class PhanBoTaiSan(models.Model):
     ma_tai_san = fields.Many2one('tai_san', string="Tài sản", required=True)
     vi_tri = fields.Char("Vị trí", required=True)
     ngay_phan_bo = fields.Date("Ngày phân bổ", required=True)
-    nguoi_phan_bo = fields.Char("Người phân bổ", required=True)
+    nhan_vien_id = fields.Many2one("nhan_vien", string="Người phân bố")
 
     @api.onchange('ma_tai_san')
     def _onchange_ma_tai_san(self):

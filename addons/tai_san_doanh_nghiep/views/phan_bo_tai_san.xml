@@ -12,7 +12,7 @@
                             <field name="ma_tai_san"/>
                             <field name="vi_tri"/>
                             <field name="ngay_phan_bo"/>
-                            <field name="nguoi_phan_bo"/>
+                            <field name="nhan_vien_id"/>
                         </group>
                         
                     </sheet>
@@ -28,7 +28,7 @@
                      <field name="ma_tai_san"/>
                             <field name="vi_tri"/>
                             <field name="ngay_phan_bo"/>
-                            <field name="nguoi_phan_bo"/>
+                            <field name="nhan_vien_id"/>
                 </tree>
             </field>
         </record>
@@ -40,7 +40,7 @@
                      <field name="ma_tai_san"/>
                             <field name="vi_tri"/>
                             <field name="ngay_phan_bo"/>
-                            <field name="nguoi_phan_bo"/>
+                            <field name="nhan_vien_id"/>
                 </search>
             </field>
         </record>

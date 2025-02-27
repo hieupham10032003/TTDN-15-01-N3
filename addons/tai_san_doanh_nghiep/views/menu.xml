@@ -35,5 +35,17 @@
             sequence="1"
             action="action_quan_ly_rui_ro"
         />
+        <menuitem name="Quản lý mượn trả" 
+            id="menu_quan_ly_muon_tra" 
+            parent="menu_root" 
+            sequence="1"
+            action="action_muon_tra"
+        />
+        <menuitem name="Thống kê tài sản" 
+            id="menu_thong_ke_tai_san" 
+            parent="menu_root" 
+            sequence="1"
+            action="action_thong_ke_tai_san"
+        />
     </data>
 </odoo>
