@@ -38,6 +38,12 @@
                                 <field name="quan_ly_rui_ro"/>
                             </page>
                         </notebook>
+                        <notebook>
+                            <page string="Quản lý mượn trả">
+                                <field name="muon_tra"/>
+                            </page>
+                        </notebook>
+                        
                     </sheet>
                 </form>
             </field>

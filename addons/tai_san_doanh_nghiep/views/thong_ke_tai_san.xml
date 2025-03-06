@@ -9,7 +9,7 @@
                     <sheet>
                         <div class="oe_read_only" style="font-size:25px">Thống kê tài sản</div>
                         <group col="4" string="Thông tin chung">
-                            <field name="ma_tai_san"/>
+                            
                             <field name="so_luong_muon"/>
                             <field name="so_luong_tai_san"/>
                             <field name="so_luong_thuc_te"/>
@@ -25,7 +25,7 @@
             <field name="model">thong_ke_tai_san</field>
             <field name="arch" type="xml">
                 <tree>
-                     <field name="ma_tai_san"/>
+                     
                             <field name="so_luong_muon"/>
                             <field name="so_luong_tai_san"/>
                             <field name="so_luong_thuc_te"/>
@@ -37,7 +37,7 @@
             <field name="model">thong_ke_tai_san</field>
             <field name="arch" type="xml">
                 <search>
-                     <field name="ma_tai_san"/>
+                     
                             <field name="so_luong_muon"/>
                             <field name="so_luong_tai_san"/>
                             <field name="so_luong_thuc_te"/>

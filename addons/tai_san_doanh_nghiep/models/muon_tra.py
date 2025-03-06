@@ -7,21 +7,16 @@ class MuonTra(models.Model):
     _rec_name = 'ma_tai_san'
 
     ma_tai_san = fields.Many2one('tai_san', string="Tài sản", required=True)
-    so_luong_muon = fields.Integer('Số lượng mượn')
-    ngay_muon = fields.Date("Ngày muợn")
-    ngay_tra = fields.Date("Ngày trả")
+    ngay_muon_du_kien = fields.Date("Ngày muợn dự kiến")
+    ngay_tra_du_kien = fields.Date("Ngày trả dự kiến")
+    ngay_muon_thuc_te = fields.Date("Ngày muợn thực tế")
+    ngay_tra_thuc_te = fields.Date("Ngày trả thực tế")
     trang_thai = fields.Selection([
-        ('da_qua_su_dung', 'Đã qua sử dụng'),
-        ('con_moi', 'Còn mới'),
-    ], string="Trạng thái", default='da_qua_su_dung')
-    tinh_trang_muon = fields.Selection([
-        ('tra_muon','Trả muộn'),
-        ('tra_som','Trả sớm'),
-        ('dung_han','Đúng hạn'),  
-        ('dang_muon','Đang mượn')
-    ])
+        ('gia_han_them', 'Gia hạn thêm'),
+        ('tra_luon', 'Trả luôn'),
+    ], string="Trạng thái", default='gia_han_them')
+    
     nhan_vien_id = fields.Many2one("nhan_vien", string="Người mượn")
     nguoi_tra = fields.Char("Người trả")
     nguoi_kiem_duyet = fields.Char("Người kiểm duyệt")
     nguoi_xac_nhan = fields.Many2one("nhan_vien", string="Người xác nhận")
-    

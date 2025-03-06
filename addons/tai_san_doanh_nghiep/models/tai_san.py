@@ -34,3 +34,6 @@ class TaiSan(models.Model):
     quan_ly_rui_ro = fields.One2many("quan_ly_rui_ro", 
                                         inverse_name="ma_tai_san", 
                                         string="Quản lý rủi ro")
+    muon_tra = fields.One2many("muon_tra", 
+                                        inverse_name="ma_tai_san", 
+                                        string="Quản lý mượn trả")
