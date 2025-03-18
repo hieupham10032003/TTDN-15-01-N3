@@ -11,7 +11,6 @@ class TaiSan(models.Model):
     loai_tai_san = fields.Selection([
         ('vat_tu', 'Vật tư'),
         ('thiet_bi', 'Thiết bị'),
-        ('phuong_tien', 'Phương tiện'),
     ], string="Loại tài sản", required=True)
     gia_tri = fields.Float("Giá trị")
     ngay_mua = fields.Date("Ngày mua")

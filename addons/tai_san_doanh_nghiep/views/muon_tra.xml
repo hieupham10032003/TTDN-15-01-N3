@@ -29,7 +29,9 @@
             <field name="name">muon_tra</field>
             <field name="model">muon_tra</field>
             <field name="arch" type="xml">
-                <tree>
+                <tree string="Tình trạng" decoration-success="trang_thai == 'gia_han_them'"
+                                    decoration-info="trang_thai == 'dang_muon'"
+                                    decoration-primary="trang_thai == 'tra_luon'"  >
                      <field name="ma_tai_san"/>
                             <field name="ngay_muon_du_kien"/>
                             <field name="ngay_tra_du_kien"/>
@@ -43,7 +45,16 @@
                 </tree>
             </field>
         </record>
-
+        <record id="muon_tra_graph_view" model="ir.ui.view">
+            <field name="name">muon_tra</field>
+            <field name="model">muon_tra</field>
+            <field name="arch" type="xml">
+                <graph string="Dữ liệu tài sản" sample="1">
+                    <field name="trang_thai" />
+                    <field name="ma_tai_san" invisible="1"/>
+                </graph>
+            </field>
+        </record>
         <record model="ir.ui.view" id="muon_tra_search">
             <field name="model">muon_tra</field>
             <field name="arch" type="xml">
@@ -70,7 +81,7 @@
         <record id="action_muon_tra" model="ir.actions.act_window">
             <field name="name">Phân bố tài sản</field>
             <field name="res_model">muon_tra</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="search_view_id" ref = "muon_tra_search"/>
 
         </record>

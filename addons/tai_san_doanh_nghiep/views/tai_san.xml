@@ -53,9 +53,10 @@
             <field name="name">tai_san</field>
             <field name="model">tai_san</field>
             <field name="arch" type="xml">
-                <tree>
+                <tree string="Tình trạng" decoration-success="loai_tai_san == 'vat_tu'"
+                                    decoration-info="loai_tai_san == 'thiet_bi'" >
                     <field name="ma_tai_san"/>
-                            <field name="ten_tai_san"/>
+                            <field name="ten_tai_san" decoration-bf="1"/>
                             <field name="loai_tai_san"/>
                             <field name="gia_tri"/>
                             <field name="ngay_mua"/>
@@ -63,6 +64,17 @@
                             <field name="vi_tri"/>
                             <field name="anh"/>
                 </tree>
+            </field>
+        </record>
+        <record id="tai_san_graph_view" model="ir.ui.view">
+            <field name="name">tai_san</field>
+            <field name="model">tai_san</field>
+            <field name="arch" type="xml">
+                <graph string="Dữ liệu tài sản" sample="1">
+                    <field name="gia_tri" />
+                    <field name="vi_tri" />
+                    <field name="ma_tai_san" invisible="1"/>
+                </graph>
             </field>
         </record>
 
@@ -78,6 +90,11 @@
                             <field name="tinh_trang"/>
                             <field name="vi_tri"/>
                             <field name="anh"/>
+                            <searchpanel>
+                                <field name="tinh_trang" select="multi"/>
+                                <field name="loai_tai_san" select="multi"/>
+                                
+                            </searchpanel>
                 </search>
             </field>
         </record>
@@ -85,7 +102,7 @@
         <record id="action_tai_san" model="ir.actions.act_window">
             <field name="name">Tài sản</field>
             <field name="res_model">tai_san</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph</field>
             <field name="search_view_id" ref = "tai_san_search"/>
 
         </record>

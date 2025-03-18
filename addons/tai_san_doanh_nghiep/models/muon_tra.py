@@ -14,6 +14,7 @@ class MuonTra(models.Model):
     trang_thai = fields.Selection([
         ('gia_han_them', 'Gia hạn thêm'),
         ('tra_luon', 'Trả luôn'),
+        ('dang_muon', 'Đang mượn')
     ], string="Trạng thái", default='gia_han_them')
     
     nhan_vien_id = fields.Many2one("nhan_vien", string="Người mượn")
