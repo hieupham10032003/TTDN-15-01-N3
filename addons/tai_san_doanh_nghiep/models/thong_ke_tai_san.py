@@ -23,7 +23,7 @@ class ThongKeTaiSan(models.Model):
         for record in self:
             # Tính số lượng tài sản đang được mượn
             record.so_luong_muon = self.env['muon_tra'].search_count([
-                ('trang_thai', '=', 'dang_muon')  # Trạng thái đang mượn
+                ('trang_thai', 'in', ['dang_muon', 'gia_han_them'])
             ])
 
     @api.depends('so_luong_tai_san', 'so_luong_muon')

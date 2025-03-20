@@ -53,8 +53,9 @@
             <field name="name">tai_san</field>
             <field name="model">tai_san</field>
             <field name="arch" type="xml">
-                <tree string="Tình trạng" decoration-success="loai_tai_san == 'vat_tu'"
-                                    decoration-info="loai_tai_san == 'thiet_bi'" >
+                <tree string="Tình trạng" decoration-success="tinh_trang == 'moi'"
+                                    decoration-info="tinh_trang == 'da_su_dung'"
+                                    decoration-danger="tinh_trang == 'hong'" >
                     <field name="ma_tai_san"/>
                             <field name="ten_tai_san" decoration-bf="1"/>
                             <field name="loai_tai_san"/>

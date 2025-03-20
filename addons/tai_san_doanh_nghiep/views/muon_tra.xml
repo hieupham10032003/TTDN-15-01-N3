@@ -79,7 +79,7 @@
         </record>
 
         <record id="action_muon_tra" model="ir.actions.act_window">
-            <field name="name">Phân bố tài sản</field>
+            <field name="name">Bảng đăng kí mượn trả</field>
             <field name="res_model">muon_tra</field>
             <field name="view_mode">tree,form,graph</field>
             <field name="search_view_id" ref = "muon_tra_search"/>
