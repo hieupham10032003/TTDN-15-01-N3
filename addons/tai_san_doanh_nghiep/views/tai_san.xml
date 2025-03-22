@@ -16,7 +16,7 @@
                             <field name="ngay_mua"/>
                             <field name="tinh_trang"/>
                             <field name="vi_tri"/>
-                            <field name="anh"/>
+                            <field name="anh" widget="image"/>
                         </group>
                         <notebook>
                             <page string="Đánh giá tài sản">
@@ -62,8 +62,8 @@
                             <field name="gia_tri"/>
                             <field name="ngay_mua"/>
                             <field name="tinh_trang"/>
-                            <field name="vi_tri"/>
-                            <field name="anh"/>
+                            <field name="vi_tri" />
+                            <field name="anh" widget="image"/>
                 </tree>
             </field>
         </record>
@@ -90,7 +90,7 @@
                             <field name="ngay_mua"/>
                             <field name="tinh_trang"/>
                             <field name="vi_tri"/>
-                            <field name="anh"/>
+                            <field name="anh" widget="image"/>
                             <searchpanel>
                                 <field name="tinh_trang" select="multi"/>
                                 <field name="loai_tai_san" select="multi"/>
